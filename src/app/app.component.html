@@ -6,12 +6,24 @@
     <form name="notepadForm">
       <label class="notepad-title">
         Notepad Title
-        <input type="text" name="notepadTitle" ng-model="" placeholder="My notepad title..." required>
+        <input type="text" name="notepadTitle" ng-model="" placeholder="My notepad title..." ng-maxlength="255" required>
       </label>
       <div class="notepad-btns">
         <button class="save-btn">Save</button>
         <button class="delete-btn">Delete</button>
       </div>
+      <div class="new-note">
+        <label class="new-note-title">
+          My Notes
+          <input type="text" name="noteTitle" placeholder="Enter note title..." ng-maxlength="255" required>
+        </label>
+        <label class="note-body">
+          <input type="text" name="noteBody" placeholder="Enter note..." ng-maxlength="1000" required>
+        </label>
+        <button class="add-btn">Add</button>
+      </div>
     </form>
+    <div class="note-list">
+    </div>
   </div>
 </body>
