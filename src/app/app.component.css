@@ -3,9 +3,11 @@
     font-family: Arial;
     color: #333;
     padding: 20px;
+    min-width: 320px;
 }
 .app-header {
     font-size: 24px;
+    margin-bottom: 10px;
 }
 .notepad-title {
     font-size: 12px;
@@ -36,11 +38,15 @@ input {
     width: 500px;
     margin-bottom: 25px;
 }
+.new-note input {
+    margin-bottom: 10px;
+}
 textarea {
     resize: none;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 500px;
+    height: 100px;
     margin-bottom: 25px;
 }
 button {
@@ -66,4 +72,14 @@ button {
     background-color: #57B93E;
     border-radius: 5px;
     border: 1px solid #57B93E;
+}
+
+@media (max-width: 600px) {
+    .notepad-controls {
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
 }

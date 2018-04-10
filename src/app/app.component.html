@@ -3,7 +3,7 @@
     Notepad Application
   </div>
   <div class="app-body">
-    <form name="notepadForm">
+    <form name="notepadForm" ng-controller="">
       <div class="notepad">
         <div class="notepad-title">
           Notepad Title
@@ -20,8 +20,12 @@
         <div class="new-note-title">
           My Notes
         </div>
-          <input type="text" name="noteTitle" placeholder="Enter note title..." ng-maxlength="255" required>
-          <textarea type="text" name="noteBody" placeholder="Enter note..." ng-maxlength="1000" required></textarea>
+          <div>
+            <input type="text" name="noteTitle" ng-model="" placeholder="Enter note title..." ng-maxlength="255" required>
+          </div>
+          <div>
+            <textarea type="text" name="noteBody" ng-model="" placeholder="Enter note..." ng-maxlength="1000" required></textarea>
+          </div>
           <div>
             <button class="add-btn">Add</button>
           </div>

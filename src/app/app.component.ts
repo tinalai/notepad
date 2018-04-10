@@ -24,8 +24,20 @@ export class AppComponent {
 
   getNotes() {
     this.getData().subscribe(data => {
-      console.log('data from api',data);
-      this.data = data;
+      console.log('data from api',data.files);
+      this.data = data.files;
     })
+  }
+
+  createNote(newNote) {
+    return this.http.post(this.apiUrl, newNote)
+      .subscribe(
+        res => {
+          console.log(res);
+        },
+        err => {
+          console.log("Post error");
+        }
+      )
   }
 }
