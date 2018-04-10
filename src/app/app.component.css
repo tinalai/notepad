@@ -1,0 +1,69 @@
+.notepad-app {
+    background-color: #EEE;
+    font-family: Arial;
+    color: #333;
+    padding: 20px;
+}
+.app-header {
+    font-size: 24px;
+}
+.notepad-title {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.notepad-controls input {
+    width: 300px;
+}
+.app-body {
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    padding: 15px;
+}
+.notepad-controls {
+    display: flex;
+    justify-content: space-between;
+}
+.new-note-title {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+input {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+textarea {
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+button {
+    font-size: 14px;
+    color: #fff;
+    padding: 8px;
+    width: 90px;
+}
+
+.save-btn {
+    background-color: #39ACDC;
+    border-radius: 5px;
+    border: 1px solid #39ACDC;
+}
+
+.delete-btn {
+    background-color: #EC3646;
+    border-radius: 5px;
+    border: 1px solid #EC3646;
+}
+
+.add-btn {
+    background-color: #57B93E;
+    border-radius: 5px;
+    border: 1px solid #57B93E;
+}

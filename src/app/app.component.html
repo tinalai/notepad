@@ -1,29 +1,33 @@
-<body>
+<div class="notepad-app">
   <div class="app-header">
     Notepad Application
   </div>
   <div class="app-body">
     <form name="notepadForm">
-      <label class="notepad-title">
-        Notepad Title
-        <input type="text" name="notepadTitle" ng-model="" placeholder="My notepad title..." ng-maxlength="255" required>
-      </label>
-      <div class="notepad-btns">
-        <button class="save-btn">Save</button>
-        <button class="delete-btn">Delete</button>
+      <div class="notepad">
+        <div class="notepad-title">
+          Notepad Title
+        </div>
+        <div class="notepad-controls">
+          <input type="text" name="notepadTitle" ng-model="" placeholder="My notepad title..." ng-maxlength="255" required>
+          <div class="notepad-buttons">
+            <button class="save-btn">Save</button>
+            <button class="delete-btn">Delete</button>
+          </div>
+        </div>
       </div>
       <div class="new-note">
-        <label class="new-note-title">
+        <div class="new-note-title">
           My Notes
+        </div>
           <input type="text" name="noteTitle" placeholder="Enter note title..." ng-maxlength="255" required>
-        </label>
-        <label class="note-body">
-          <input type="text" name="noteBody" placeholder="Enter note..." ng-maxlength="1000" required>
-        </label>
-        <button class="add-btn">Add</button>
-      </div>
+          <textarea type="text" name="noteBody" placeholder="Enter note..." ng-maxlength="1000" required></textarea>
+          <div>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
     </form>
     <div class="note-list">
     </div>
   </div>
-</body>
+</div>
